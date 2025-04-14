@@ -112,11 +112,16 @@ void process()
     }
 }
 
-int main ( int argc, char *argv[] )
-{
+void displayGameHeading() {
     cout << "**************************"<<endl;
     cout << "******** 2048 Game *******"<<endl;;
     cout << "**************************"<<endl;
+}
+
+
+int main ( int argc, char *argv[] )
+{
+    displayGameHeading();
 
     generateInitial();
     display();
